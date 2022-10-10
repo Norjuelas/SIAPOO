@@ -10,20 +10,21 @@ package tarea.pkg3;
  */
 public class Estudiante {
     
-    Materia materia;
-    Profesor profesor;
-    Tramites tramite;
-    Calificacion calificacion;
-    Convocatoria convocatoria;
+    private Materia materia;
+    private Profesor profesor;
+    private Tramites tramite;
+    private Calificacion calificacion;
+    private Convocatoria convocatoria;
             
-    public String nombre;
-    public String apellido;
-    public String pregrado;
-    public String materias_inscritas;
-    public int ID;
+    private String nombre;
+    private String apellido;
+    private String pregrado;
+    private String materiasInscritas;
+    private int ID;
     private int edad;
     private double papa;
-
+//setter
+    
     public void setMateria(Materia materia) {
         this.materia = materia;
     }
@@ -56,22 +57,14 @@ public class Estudiante {
         this.pregrado = pregrado;
     }
 
-    public void setMaterias_inscritas(String materias_inscritas) {
-        this.materias_inscritas = materias_inscritas;
+    public void setMateriasInscritas(String materiasInscritas) {
+        this.materiasInscritas = materiasInscritas;
     }
 
     public void setID(int ID) {
         this.ID = ID;
     }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public void setPapa(double papa) {
-        this.papa = papa;
-    }
-
+//getter
     public Materia getMateria() {
         return materia;
     }
@@ -104,8 +97,8 @@ public class Estudiante {
         return pregrado;
     }
 
-    public String getMaterias_inscritas() {
-        return materias_inscritas;
+    public String getMateriasInscritas() {
+        return materiasInscritas;
     }
 
     public int getID() {
@@ -120,7 +113,13 @@ public class Estudiante {
         return papa;
     }
 
-    
-    
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setPapa(double papa) {
+        this.papa = papa;
+    }
+
     
 }

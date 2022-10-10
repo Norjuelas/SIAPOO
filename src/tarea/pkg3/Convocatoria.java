@@ -11,13 +11,15 @@ package tarea.pkg3;
  */
 public class Convocatoria {
     
-    Estudiante estudiante;
+    private Estudiante estudiante;
     
-    public String nombre_convocatoria;
+    private String nombre_convocatoria;
     private String nombre_estudiante;
-    public boolean cumple_requisitos;
-    public double papa;
-    public int PBM;
+    private boolean cumple_requisitos;
+    private double papa;
+    private int PBM;
+
+    //---setter
 
     public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
@@ -42,6 +44,7 @@ public class Convocatoria {
     public void setPBM(int PBM) {
         this.PBM = PBM;
     }
+   //--getter
 
     public Estudiante getEstudiante() {
         return estudiante;
@@ -67,6 +70,6 @@ public class Convocatoria {
         return PBM;
     }
     
-    
+  
     
 }

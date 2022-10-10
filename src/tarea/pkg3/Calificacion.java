@@ -11,14 +11,15 @@ package tarea.pkg3;
 
 public class Calificacion {
     
-    Estudiante estudiante;
-    Profesor profesor;
+    private Estudiante estudiante;
+    private Profesor profesor;
     
-    public String calificado;
-    public String calificante;
+    private String calificado;
+    private String calificante;
+    private String retroalimentacion;
     private int nota;
-    public String retroalimentacion;
 
+//--setter
     public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
     }
@@ -35,16 +36,16 @@ public class Calificacion {
         this.calificante = calificante;
     }
 
-    public void setNota(int nota) {
-        this.nota = nota;
-    }
-
     public void setRetroalimentacion(String retroalimentacion) {
         this.retroalimentacion = retroalimentacion;
     }
 
-    
-    
+    public void setNota(int nota) {
+        this.nota = nota;
+    }
+
+
+//getter--
     public Estudiante getEstudiante() {
         return estudiante;
     }
@@ -61,14 +62,12 @@ public class Calificacion {
         return calificante;
     }
 
+    public String getRetroalimentacion() {
+        return retroalimentacion;
+    }
+
     public int getNota() {
         return nota;
     }
 
-    public String getRetroalimentacion() {
-        return retroalimentacion;
-    }
-    
-    
-    
 }

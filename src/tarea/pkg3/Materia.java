@@ -3,50 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package tarea.pkg3;
-
 /**
  *
  * @author Jeison Diaz y Nicolas Orjuela
  */
 public class Materia {
     
-    EstudianteTutor estudianteTutor;
-    Estudiante estudiantes;
-    Profesor profesor;
+    private EstudianteTutor estudianteTutor;
+    private Estudiante estudiantes;
+    private Profesor profesor;
     
-    public String nombre;
-    public int creditos;
-    public String grupo;
-    public String monitor;
+    private String nombre;
+    private int creditos;
+    private String grupo;
+    private String monitor;
 
-    public void setEstudianteTutor(EstudianteTutor estudianteTutor) {
-        this.estudianteTutor = estudianteTutor;
-    }
-
-    public void setEstudiantes(Estudiante estudiantes) {
-        this.estudiantes = estudiantes;
-    }
-
-    public void setProfesor(Profesor profesor) {
-        this.profesor = profesor;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setCreditos(int creditos) {
-        this.creditos = creditos;
-    }
-
-    public void setGrupo(String grupo) {
-        this.grupo = grupo;
-    }
-
-    public void setMonitor(String monitor) {
-        this.monitor = monitor;
-    }
-
+    //---getter
     public EstudianteTutor getEstudianteTutor() {
         return estudianteTutor;
     }
@@ -74,6 +46,33 @@ public class Materia {
     public String getMonitor() {
         return monitor;
     }
-    
-    
+//--setter
+    public void setEstudianteTutor(EstudianteTutor estudianteTutor) {
+        this.estudianteTutor = estudianteTutor;
+    }
+
+    public void setEstudiantes(Estudiante estudiantes) {
+        this.estudiantes = estudiantes;
+    }
+
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCreditos(int creditos) {
+        this.creditos = creditos;
+    }
+
+    public void setGrupo(String grupo) {
+        this.grupo = grupo;
+    }
+
+    public void setMonitor(String monitor) {
+        this.monitor = monitor;
+    }
+   
 }

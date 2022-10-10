@@ -10,10 +10,10 @@ package tarea.pkg3;
  */
 public class Profesor {
     
-    Estudiante estudiantes;
-    Materia materia;
-    Calificacion calificacion;
-    Tramites tramite;
+    private Estudiante estudiantes;
+    private Materia materia;
+    private Calificacion calificacion;
+    private Tramites tramite;
     
     private String nombre;
     private String apellido;

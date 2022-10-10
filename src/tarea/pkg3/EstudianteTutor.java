@@ -10,13 +10,14 @@ package tarea.pkg3;
  */
 public class EstudianteTutor {
     
-    Materia materia;
+    private Materia materia;
     
-    public String nombre;
+    private String nombre;
     private String apellido;
-    public int edad;
-    public String materia_tutoreada;
+    private int edad;
+    private String materia_tutoreada;
 
+//---setter
     public void setMateria(Materia materia) {
         this.materia = materia;
     }
@@ -36,6 +37,7 @@ public class EstudianteTutor {
     public void setMateria_tutoreada(String materia_tutoreada) {
         this.materia_tutoreada = materia_tutoreada;
     }
+//--getter
 
     public Materia getMateria() {
         return materia;
@@ -56,7 +58,5 @@ public class EstudianteTutor {
     public String getMateria_tutoreada() {
         return materia_tutoreada;
     }
-    
-    
     
 }

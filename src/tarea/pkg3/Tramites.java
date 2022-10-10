@@ -10,13 +10,17 @@ package tarea.pkg3;
  */
 public class Tramites{
     
-    Profesor profesor;
-    Estudiante estudiante;
+    private Profesor profesor;
+    private Estudiante estudiante;
     
-    public String tramite_realizar;
-    public String solicitante;
-    public int fecha_solicitud;
-
+    private String tramite_realizar;
+    private String solicitante;
+    private int fecha_solicitud;
+    
+    
+//--setter
+    
+    
     public void setProfesor(Profesor profesor) {
         this.profesor = profesor;
     }
@@ -37,6 +41,9 @@ public class Tramites{
         this.fecha_solicitud = fecha_solicitud;
     }
 
+    
+    //getter
+
     public Profesor getProfesor() {
         return profesor;
     }
@@ -56,8 +63,6 @@ public class Tramites{
     public int getFecha_solicitud() {
         return fecha_solicitud;
     }
-
-    
     
     
     
